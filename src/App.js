@@ -13,6 +13,9 @@ function App(props) {
         <p>{props.myReduxMessage}</p>
         <button onClick={props.hiButtonPressed}>Say hi to Redux</button>
         <h3>here is props: {props.myReduxNumber}</h3>
+        <button onClick={props.onIncrementCounter}>+</button>
+        <button onClick={props.onDecrementCounter}>-</button>
+
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -42,6 +45,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onIncrementCounter: () => dispatch({ type: "INCREMENT" }),
+    onDecrementCounter: () => dispatch({ type: "DECREMENT" }),
     hiButtonPressed: () =>
       dispatch({ type: "NEW_MESSAGE", newMsg: "Well Hello there, Redux." }),
   };
