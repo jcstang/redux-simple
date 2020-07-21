@@ -33,6 +33,7 @@ function App(props) {
   );
 }
 
+// ** Without using REDUX **
 // export default App;
 
 // *** REDUX ***
