@@ -6,18 +6,18 @@ import { connect } from "react-redux";
 function Counter(props) {
   return (
     <div>
-      <div className={styles.row}>
+      <div className="row">
         <button
-          className={styles.button}
+          className="button"
           aria-label="Decrement value"
           // onClick={() => dispatch(decrement())}
           onClick={props.onDecrementCounter}
         >
           -
         </button>
-        <span className={styles.value}>{props.myReduxNumber}</span>
+        <span className="value">{props.myReduxNumber}</span>
         <button
-          className={styles.button}
+          className="button"
           aria-label="Increment value"
           onClick={props.onIncrementCounter}
         >
