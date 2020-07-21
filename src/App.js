@@ -4,6 +4,7 @@ import "./App.css";
 
 // *** REDUX ***
 import { connect } from "react-redux";
+import Counter from "./components/Counter";
 
 function App(props) {
   return (
@@ -15,7 +16,7 @@ function App(props) {
         <h3>here is props: {props.myReduxNumber}</h3>
         <button onClick={props.onIncrementCounter}>+</button>
         <button onClick={props.onDecrementCounter}>-</button>
-
+        <Counter />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
