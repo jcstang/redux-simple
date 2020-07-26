@@ -1,6 +1,11 @@
+// ***************************************************************************
+// Componeent - Counter
+// main file: index.js
+// css: index.css
+// ***************************************************************************
+
 import React from "react";
-// import styles from "./Counter.module.css";
-import styles from "./index.css";
+import "./index.css";
 import { connect } from "react-redux";
 
 function Counter(props) {
@@ -10,7 +15,6 @@ function Counter(props) {
         <button
           className="button"
           aria-label="Decrement value"
-          // onClick={() => dispatch(decrement())}
           onClick={props.onDecrementCounter}
         >
           -
@@ -29,6 +33,7 @@ function Counter(props) {
 }
 
 // *** REDUX ***
+// =============================================================
 const mapStateToProps = (state) => {
   return {
     myReduxNumber: state.counter,
